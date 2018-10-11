@@ -1,6 +1,7 @@
 import React from "react";
 
 import MenuComponent from "../../components/menu/MenuComponent.js";
+import LogoComponent from "../../components/logo/LogoComponent.js";
 
 class MenuContainer extends React.Component {
   constructor(props) {
@@ -8,7 +9,12 @@ class MenuContainer extends React.Component {
   }
 
   render() {
-    return <MenuComponent />;
+    return (
+      <div>
+        <LogoComponent />
+        <MenuComponent />
+      </div>
+    );
   }
 }
 
