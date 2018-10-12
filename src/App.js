@@ -4,6 +4,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import HeaderContainer from "./containers/header/HeaderContainer";
 import MenuContainer from "./containers/menu/MenuContainer";
+import BodyContainer from "./containers/body/bodyContainer";
 
 class App extends Component {
   render() {
@@ -12,10 +13,15 @@ class App extends Component {
         <div className="menu">
           <MenuContainer />
         </div>
-        <div className="col-center-block col-md-8">
-          <header className="App-header ">
-            <HeaderContainer />
-          </header>
+        <header className="App-header ">
+          <HeaderContainer />
+        </header>
+        <div className="row">
+          <div className="col-center-block col-md-8 col-md-offset-8">
+            <div>
+              <BodyContainer />
+            </div>
+          </div>
         </div>
       </div>
     );
