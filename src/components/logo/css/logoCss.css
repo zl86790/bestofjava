@@ -1,4 +1,19 @@
 .logo {
   height: 100px;
-  background-color: gray;
+  background: url(../images/logo.svg) right center no-repeat rgb(255, 227, 140);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoTitle {
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
 }

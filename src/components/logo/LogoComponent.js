@@ -4,7 +4,7 @@ import "./css/logoCss.css";
 const LogoComponent = props => {
   return (
     <div className="logo">
-      <div>Logo</div>
+      <div className="logoTitle">Logo</div>
     </div>
   );
 };

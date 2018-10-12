@@ -31,7 +31,7 @@
     transform: rotate(360deg);
   }
 }
-*/
+
 
 .col-center-block {
   float: none;
@@ -45,7 +45,11 @@
   bottom: 0;
   right: 0;
   z-index: 20;
-  width: var(--sidebarWidth);
   overflow-y: auto;
-  width: 280px;
+}
+*/
+
+.row.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }

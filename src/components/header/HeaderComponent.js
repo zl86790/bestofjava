@@ -1,9 +1,9 @@
 import React from "react";
-import "./css/headerCss.css";
+import "./css/headerComponentStyle.css";
 
 const HeaderComponent = props => {
   return (
-    <div className="header">
+    <div>
       <div className="headerTitle">bestofjava.net</div>
     </div>
   );

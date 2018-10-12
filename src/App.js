@@ -9,16 +9,18 @@ import BodyContainer from "./containers/body/bodyContainer";
 class App extends Component {
   render() {
     return (
-      <div>
-        <div className="menu">
+      <div className="row no-gutter">
+        <div className="col-md-2">
           <MenuContainer />
         </div>
-        <header className="App-header ">
-          <HeaderContainer />
-        </header>
-        <div className="row">
-          <div className="col-center-block col-md-8 col-md-offset-8">
-            <div>
+        <div className="col-md-10">
+          <div className="row no-gutter">
+            <header className="col-md-12">
+              <HeaderContainer />
+            </header>
+          </div>
+          <div className="row no-gutter">
+            <div className="col-md-12">
               <BodyContainer />
             </div>
           </div>

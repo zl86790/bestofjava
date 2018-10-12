@@ -1,0 +1,10 @@
+.menuCard {
+  color: rgb(255, 255, 255);
+  background: #541600;
+  text-decoration: none;
+  width: 100%;
+  height: 54px;
+  padding: 14px 0 0 10px;
+  font: 700 18px "Roboto Slab";
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}

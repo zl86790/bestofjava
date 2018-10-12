@@ -1,0 +1,9 @@
+.leftMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  height: 1000px;
+  width: 16%;
+  overflow-y: auto;
+}
