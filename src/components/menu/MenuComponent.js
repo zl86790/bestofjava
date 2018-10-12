@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/bojLeftMenu.css";
-import MenuCard from "../menuCard/MenuCardComponent";
+import MenuCard from "./menuCard/MenuCardComponent";
 
 const MenuComponent = props => {
   return (
