@@ -20,7 +20,7 @@ class App extends Component {
             </header>
           </div>
           <div className="row no-gutter">
-            <div className="col-md-12">
+            <div className="col-md-12 bojBody">
               <BodyContainer />
             </div>
           </div>

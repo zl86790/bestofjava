@@ -6,3 +6,7 @@
 .subBannerStyle {
   color: rgb(91, 16, 4);
 }
+
+.splitterStyle {
+  border-bottom: 1px dashed #ffae63;
+}

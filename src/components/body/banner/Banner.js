@@ -8,6 +8,7 @@ const Banner = props => {
         A curated list of the most popular open-source projects related to the
         web platform and Node.js.
       </div>
+      <div className="splitterStyle" />
     </div>
   );
 };
