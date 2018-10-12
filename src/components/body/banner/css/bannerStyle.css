@@ -1,12 +1,16 @@
 .bannerStyle {
   color: rgb(91, 16, 4);
-  font-size: 2rem;
+  font: 700 40px "Trebuchet MS";
+  padding-top: 15px;
 }
 
 .subBannerStyle {
   color: rgb(91, 16, 4);
+  padding-top: 15px;
+  font: 400 20px "";
 }
 
 .splitterStyle {
+  padding-top: 30px;
   border-bottom: 1px dashed #ffae63;
 }

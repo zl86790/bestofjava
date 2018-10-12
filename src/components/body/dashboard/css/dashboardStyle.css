@@ -1,0 +1,10 @@
+.dashboardTitleStyle {
+  color: rgb(91, 16, 4);
+  padding-top: 15px;
+  font: 400 25px "";
+  font-weight: bold;
+}
+
+.flameColor {
+  color: rgb(250, 158, 89);
+}
