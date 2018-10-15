@@ -31,7 +31,7 @@ const CardComponent = props => {
           </div>
         </div>
       </div>
-      <div className="row top-gray-line" style={{ padding: 15, height: 100 }}>
+      <div className="row top-gray-line" style={{ padding: 15, height: 120 }}>
         {props.content}
       </div>
       <div className="row top-gray-line" style={{ padding: 15 }}>

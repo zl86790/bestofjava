@@ -1,0 +1,16 @@
+.footerStyle {
+  color: rgb(91, 16, 4);
+  font: 700 15px "Trebuchet MS";
+  padding-top: 25px;
+}
+
+.subFooterStyle {
+  color: rgb(91, 16, 4);
+  padding-top: 15px;
+  font: 400 20px "";
+}
+
+.splitterStyle {
+  padding-top: 30px;
+  border-bottom: 1px dashed #ffae63;
+}

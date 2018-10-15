@@ -4,7 +4,7 @@ import "./css/dashboardStyle.css";
 
 const DashboardComponent = props => {
   return (
-    <div>
+    <div className="row">
       <div className="dashboardTitleStyle row">
         <div style={{ marginTop: -5, marginLeft: 15, marginRight: 15 }}>
           <svg
@@ -32,7 +32,7 @@ const DashboardComponent = props => {
                 title={item.name}
                 image={item.owner.avatar_url}
                 stars={item.stargazers_count}
-                content={item.description.substring(0, 50)}
+                content={item.description}
               />
             );
           })}
