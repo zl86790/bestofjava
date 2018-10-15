@@ -57,3 +57,7 @@
 .bojBody {
   background-color: rgb(236, 236, 236);
 }
+
+.top-gray-line {
+  border-top: 1px dashed rgb(203, 203, 203);
+}

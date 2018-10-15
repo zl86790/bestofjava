@@ -1,5 +1,5 @@
 import React from "react";
-import CardComponent from "./CardComponent";
+import CardComponent from "./cardComponent/CardComponent";
 import "./css/dashboardStyle.css";
 
 const DashboardComponent = props => {
@@ -21,12 +21,27 @@ const DashboardComponent = props => {
             />
           </svg>
         </div>
-        <div>Today hot projects</div>
+        <div>Today Hot Projects</div>
       </div>
       <div>
-        <CardComponent title="Walt" />
-        <CardComponent title="30 seconds of code" />
-        <CardComponent title="Test" />
+        <CardComponent
+          title="Walt"
+          image="https://avatars.githubusercontent.com/u/37333181?v=3&s=75"
+          stars="25"
+          content="A test message here"
+        />
+        <CardComponent
+          title="30 seconds of code"
+          image="https://avatars.githubusercontent.com/u/37333181?v=3&s=75"
+          stars="25"
+          content="A test message here"
+        />
+        <CardComponent
+          title="Test"
+          image="https://avatars.githubusercontent.com/u/37333181?v=3&s=75"
+          stars="25"
+          content="A test message here"
+        />
       </div>
     </div>
   );
