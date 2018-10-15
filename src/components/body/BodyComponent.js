@@ -8,7 +8,7 @@ const BodyComponent = props => {
     <div className="row no-gutter">
       <div className="main col-md-8 offset-2">
         <Banner />
-        <DashboardComponent />
+        <DashboardComponent data={props.data} />
       </div>
     </div>
   );
