@@ -14,6 +14,7 @@ const CardComponent = props => {
         <div className="col-md-3 text-center" style={{ margin: "auto" }}>
           <div className="">
             {props.stars}
+            &nbsp;
             <svg
               className="octicon octicon-star"
               viewBox="0 0 14 16"
@@ -35,7 +36,8 @@ const CardComponent = props => {
         {props.content}
       </div>
       <div className="row top-gray-line" style={{ padding: 15 }}>
-        ...
+        Owner:&nbsp;
+        {props.owner}
       </div>
     </div>
   );

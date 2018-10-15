@@ -33,6 +33,7 @@ const DashboardComponent = props => {
                 image={item.owner.avatar_url}
                 stars={item.stargazers_count}
                 content={item.description}
+                owner={item.owner.login}
               />
             );
           })}
