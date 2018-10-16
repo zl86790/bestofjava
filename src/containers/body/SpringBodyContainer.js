@@ -3,7 +3,7 @@ import React from "react";
 import BodyComponent from "../../components/body/BodyComponent";
 import { getTopJava } from "../../modules/api/Github";
 
-class BodyContainer extends React.Component {
+class SpringBodyContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,4 +22,4 @@ class BodyContainer extends React.Component {
   }
 }
 
-export default BodyContainer;
+export default SpringBodyContainer;

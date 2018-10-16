@@ -4,7 +4,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import HeaderContainer from "./containers/header/HeaderContainer";
 import MenuContainer from "./containers/menu/MenuContainer";
-import BodyContainer from "./containers/body/bodyContainer";
+import BodyContainer from "./containers/body/BodyContainer";
+import { Switch, Route } from "react-router";
 
 class App extends Component {
   render() {
@@ -21,7 +22,9 @@ class App extends Component {
           </div>
           <div className="row no-gutter">
             <div className="col-md-12 bojBody">
-              <BodyContainer />
+              <Switch>
+                <Route exact path="/" component={BodyContainer} />
+              </Switch>
             </div>
           </div>
         </div>
