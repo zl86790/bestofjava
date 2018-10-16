@@ -1,7 +1,9 @@
 import React from "react";
 
 import BodyComponent from "../../components/body/BodyComponent";
-import { getTopJava } from "../../modules/api/Github";
+import Banner from "../../components/body/banner/Banner";
+import Footer from "../../components/body/footer/Footer";
+import { getTopJavaSpring } from "../../modules/api/Github";
 
 class SpringBodyContainer extends React.Component {
   constructor(props) {
@@ -12,13 +14,21 @@ class SpringBodyContainer extends React.Component {
   }
 
   async componentDidMount() {
-    const response = await getTopJava();
+    const response = await getTopJavaSpring();
     console.log(response);
     this.setState({ data: response.data });
   }
 
   render() {
-    return <BodyComponent data={this.state.data} />;
+    return (
+      <div className="row no-gutter">
+        <div className="main col-md-8 offset-2">
+          <Banner />
+          <BodyComponent data={this.state.data} />
+          <Footer />
+        </div>
+      </div>
+    );
   }
 }
 

@@ -32,7 +32,10 @@ const CardComponent = props => {
           </div>
         </div>
       </div>
-      <div className="row top-gray-line" style={{ padding: 15, height: 120 }}>
+      <div
+        className="row top-gray-line ell"
+        style={{ padding: 15, height: 117, paddingBottom: 18 }}
+      >
         {props.content}
       </div>
       <div className="row top-gray-line" style={{ padding: 15 }}>

@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import HeaderContainer from "./containers/header/HeaderContainer";
 import MenuContainer from "./containers/menu/MenuContainer";
 import BodyContainer from "./containers/body/BodyContainer";
+import SpringBodyContainer from "./containers/body/SpringBodyContainer";
 import { Switch, Route } from "react-router";
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
             <div className="col-md-12 bojBody">
               <Switch>
                 <Route exact path="/" component={BodyContainer} />
+                <Route exact path="/spring" component={SpringBodyContainer} />
               </Switch>
             </div>
           </div>

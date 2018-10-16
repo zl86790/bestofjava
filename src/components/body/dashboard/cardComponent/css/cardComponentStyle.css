@@ -13,11 +13,6 @@
 }
 
 .ell {
-  white-space: nowrap;
-
   text-overflow: ellipsis;
-
-  /*兼容性*/
-
-  -webkit-text-overflow: ellipsis;
+  overflow: hidden;
 }
