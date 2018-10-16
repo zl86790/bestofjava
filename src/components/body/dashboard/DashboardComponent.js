@@ -1,7 +1,7 @@
 import React from "react";
 import CardComponent from "./cardComponent/CardComponent";
 import "./css/dashboardStyle.css";
-
+import ReactLoading from "react-loading";
 const DashboardComponent = props => {
   return (
     <div className="row">
@@ -25,6 +25,11 @@ const DashboardComponent = props => {
           Today Hot{" "}
           <span style={{ textTransform: "Capitalize" }}>{props.topic}</span>{" "}
           Projects
+        </div>
+      </div>
+      <div className="row">
+        <div style={{ paddingTop: 80, paddingLeft: 213 }}>
+          <ReactLoading type="spin" color="orange" width={50} />
         </div>
       </div>
       <div>
