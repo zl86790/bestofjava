@@ -5,8 +5,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import HeaderContainer from "./containers/header/HeaderContainer";
 import MenuContainer from "./containers/menu/MenuContainer";
 import BodyContainer from "./containers/body/BodyContainer";
-import SpringBodyContainer from "./containers/body/SpringBodyContainer";
-import MavenBodyContainer from "./containers/body/MavenBodyContainer";
 import TopicBodyContainer from "./containers/body/TopicBodyContainer";
 import { Switch, Route } from "react-router";
 
