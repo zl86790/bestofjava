@@ -27,7 +27,8 @@ const DashboardComponent = props => {
           Projects
         </div>
       </div>
-      <div className="row">
+      <br />
+      <div className="row" style={{ display: props.display }}>
         <div style={{ paddingTop: 80, paddingLeft: 213 }}>
           <ReactLoading type="spin" color="orange" width={50} />
         </div>

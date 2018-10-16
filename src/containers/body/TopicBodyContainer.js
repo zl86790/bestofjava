@@ -9,13 +9,16 @@ class TopicBodyContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      display: ""
     };
   }
 
   async componentWillReceiveProps(nextProps) {
+    this.setState({ display: "" });
     const response = await getTopJavaTopic(nextProps.match.params.topic);
     this.setState({ data: response.data });
+    this.setState({ display: "none" });
   }
 
   render() {
@@ -26,6 +29,7 @@ class TopicBodyContainer extends React.Component {
           <BodyComponent
             data={this.state.data}
             topic={this.props.match.params.topic}
+            display={this.state.display}
           />
           <Footer />
         </div>

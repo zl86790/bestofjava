@@ -9,13 +9,16 @@ class BodyContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      display: ""
     };
   }
 
   async componentDidMount() {
+    this.setState({ display: "" });
     const response = await getTopJava();
     this.setState({ data: response.data });
+    this.setState({ display: "none" });
   }
 
   render() {
@@ -23,7 +26,7 @@ class BodyContainer extends React.Component {
       <div className="row no-gutter">
         <div className="main col-md-8 offset-2">
           <Banner />
-          <BodyComponent data={this.state.data} />
+          <BodyComponent data={this.state.data} display={this.state.display} />
           <Footer />
         </div>
       </div>
