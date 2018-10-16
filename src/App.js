@@ -27,9 +27,7 @@ class App extends Component {
             <div className="col-md-12 bojBody">
               <Switch>
                 <Route exact path="/" component={BodyContainer} />
-                <Route exact path="/spring" component={SpringBodyContainer} />
-                <Route exact path="/maven" component={MavenBodyContainer} />
-                <Route exact path="/mybatis" component={TopicBodyContainer} />
+                <Route path="/topic/:topic" component={TopicBodyContainer} />
               </Switch>
             </div>
           </div>

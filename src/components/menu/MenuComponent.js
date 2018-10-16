@@ -5,10 +5,10 @@ import MenuCard from "./menuCard/MenuCardComponent";
 const MenuComponent = props => {
   return (
     <div className="bojLeftMenu">
-      <MenuCard label="Home" link="/" topic="mybatis" />
-      <MenuCard label="Spring" link="/spring" topic="mybatis" />
-      <MenuCard label="Maven" link="/maven" topic="mybatis" />
-      <MenuCard label="Mybatis" link="/mybatis" topic="mybatis" />
+      <MenuCard label="Home" link="/" />
+      <MenuCard label="Spring" link="/topic" topic="spring" />
+      <MenuCard label="Maven" link="/topic" topic="maven" />
+      <MenuCard label="Mybatis" link="/topic" topic="mybatis" />
     </div>
   );
 };
