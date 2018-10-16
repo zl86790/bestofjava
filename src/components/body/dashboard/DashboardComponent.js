@@ -26,7 +26,6 @@ const DashboardComponent = props => {
       <div>
         {props.data.items &&
           props.data.items.map(item => {
-            console.log(item);
             return (
               <CardComponent
                 title={item.name}

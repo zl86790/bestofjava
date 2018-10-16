@@ -6,6 +6,8 @@ import HeaderContainer from "./containers/header/HeaderContainer";
 import MenuContainer from "./containers/menu/MenuContainer";
 import BodyContainer from "./containers/body/BodyContainer";
 import SpringBodyContainer from "./containers/body/SpringBodyContainer";
+import MavenBodyContainer from "./containers/body/MavenBodyContainer";
+import TopicBodyContainer from "./containers/body/TopicBodyContainer";
 import { Switch, Route } from "react-router";
 
 class App extends Component {
@@ -26,6 +28,8 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={BodyContainer} />
                 <Route exact path="/spring" component={SpringBodyContainer} />
+                <Route exact path="/maven" component={MavenBodyContainer} />
+                <Route exact path="/mybatis" component={TopicBodyContainer} />
               </Switch>
             </div>
           </div>

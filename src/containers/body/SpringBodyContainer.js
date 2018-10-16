@@ -15,7 +15,6 @@ class SpringBodyContainer extends React.Component {
 
   async componentDidMount() {
     const response = await getTopJavaSpring();
-    console.log(response);
     this.setState({ data: response.data });
   }
 
