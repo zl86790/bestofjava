@@ -13,7 +13,7 @@ class TopicBodyContainer extends React.Component {
     };
   }
 
-  async componentDidMount() {
+  async componentWillReceiveProps() {
     const response = await getTopJavaTopic(this.props.match.params.topic);
     this.setState({ data: response.data });
   }
