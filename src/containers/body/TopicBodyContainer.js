@@ -13,8 +13,8 @@ class TopicBodyContainer extends React.Component {
     };
   }
 
-  async componentWillReceiveProps() {
-    const response = await getTopJavaTopic(this.props.match.params.topic);
+  async componentWillReceiveProps(nextProps) {
+    const response = await getTopJavaTopic(nextProps.match.params.topic);
     this.setState({ data: response.data });
   }
 
@@ -23,7 +23,10 @@ class TopicBodyContainer extends React.Component {
       <div className="row no-gutter">
         <div className="main col-md-8 offset-2">
           <Banner />
-          <BodyComponent data={this.state.data} />
+          <BodyComponent
+            data={this.state.data}
+            topic={this.props.match.params.topic}
+          />
           <Footer />
         </div>
       </div>

@@ -27,7 +27,11 @@ class App extends Component {
             <div className="col-md-12 bojBody">
               <Switch>
                 <Route exact path="/" component={BodyContainer} />
-                <Route path="/topic/:topic" component={TopicBodyContainer} />
+                <Route
+                  exact
+                  path="/topic/:topic"
+                  component={TopicBodyContainer}
+                />
               </Switch>
             </div>
           </div>

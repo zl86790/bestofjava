@@ -1,10 +1,8 @@
 import React from "react";
 import "./css/bodyCss.css";
-import Banner from "./banner/Banner";
-import Footer from "./footer/Footer";
 import DashboardComponent from "./dashboard/DashboardComponent";
 
 const BodyComponent = props => {
-  return <DashboardComponent data={props.data} />;
+  return <DashboardComponent data={props.data} topic={props.topic} />;
 };
 export default BodyComponent;

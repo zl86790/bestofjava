@@ -21,7 +21,11 @@ const DashboardComponent = props => {
             />
           </svg>
         </div>
-        <div>Today Hot Projects</div>
+        <div>
+          Today Hot{" "}
+          <span style={{ textTransform: "Capitalize" }}>{props.topic}</span>{" "}
+          Projects
+        </div>
       </div>
       <div>
         {props.data.items &&
