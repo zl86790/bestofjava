@@ -8,11 +8,13 @@ export const getTopJava = async () => {
 };
 
 export const getTopJavaTopic = async (language, topic) => {
-  return await axios.get(
-    "https://api.github.com/search/repositories?q=language:" +
-      language +
-      "+topic:" +
-      topic +
-      "&sort=stars&order=desc"
-  );
+  let url = "https://api.github.com/search/repositories?q=";
+  if (language) {
+    url += "language:" + language;
+  }
+  if (topic) {
+    url += "topic:" + topic;
+  }
+  url += "&sort=stars&order=desc";
+  return await axios.get(url);
 };

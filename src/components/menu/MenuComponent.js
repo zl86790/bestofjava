@@ -16,7 +16,7 @@ const MenuComponent = props => {
         />
         <MenuCard
           label="Java"
-          link="/"
+          link="/java"
           d={twoMenuIcon}
           menuStyle="menuCard oneStyle"
         />
@@ -70,7 +70,7 @@ const MenuComponent = props => {
         />
         <MenuCard
           label="Python"
-          link="/"
+          link="/python"
           d={twoMenuIcon}
           menuStyle="menuCard oneStyle"
         />

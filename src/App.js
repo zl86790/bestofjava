@@ -30,6 +30,7 @@ class App extends Component {
                   path="/:language/:topic"
                   component={TopicBodyContainer}
                 />
+                <Route exact path="/:language" component={TopicBodyContainer} />
               </Switch>
             </div>
           </div>
