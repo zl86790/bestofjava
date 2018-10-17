@@ -3,6 +3,8 @@ import "./css/bojLeftMenu.css";
 import MenuCard from "./menuCard/MenuCardComponent";
 
 const MenuComponent = props => {
+  const twoMenuIcon =
+    "M9 0H1C.27 0 0 .27 0 1v15l5-3.09L10 16V1c0-.73-.27-1-1-1zm-.78 4.25L6.36 5.61l.72 2.16c.06.22-.02.28-.2.17L5 6.6 3.12 7.94c-.19.11-.25.05-.2-.17l.72-2.16-1.86-1.36c-.17-.16-.14-.23.09-.23l2.3-.03.7-2.16h.25l.7 2.16 2.3.03c.23 0 .27.08.09.23h.01z";
   return (
     <div className="bojLeftMenu">
       <nav>
@@ -13,50 +15,74 @@ const MenuComponent = props => {
           menuStyle="menuCard oneStyle"
         />
         <MenuCard
+          label="Java"
+          link="/"
+          d={twoMenuIcon}
+          menuStyle="menuCard oneStyle"
+        />
+        <MenuCard
           label="Activiti"
-          link="/topic/activiti"
+          link="/java/activiti"
           d="M0 14l6-6-6-6v12z"
           menuStyle="menuCard twoStyle"
         />
         <MenuCard
           label="Lucene"
-          link="/topic/lucene"
+          link="/java/lucene"
           d="M0 14l6-6-6-6v12z"
           menuStyle="menuCard twoStyle"
         />
         <MenuCard
           label="Mybatis"
-          link="/topic/mybatis"
+          link="/java/mybatis"
           d="M0 14l6-6-6-6v12z"
           menuStyle="menuCard twoStyle"
         />
         <MenuCard
           label="Maven"
-          link="/topic/maven"
+          link="/java/maven"
           d="M0 14l6-6-6-6v12z"
           menuStyle="menuCard twoStyle"
         />
         <MenuCard
           label="Rabbitmq"
-          link="/topic/rabbitmq"
+          link="/java/rabbitmq"
           d="M0 14l6-6-6-6v12z"
           menuStyle="menuCard twoStyle"
         />
         <MenuCard
           label="Redis"
-          link="/topic/redis"
+          link="/java/redis"
           d="M0 14l6-6-6-6v12z"
           menuStyle="menuCard twoStyle"
         />
         <MenuCard
           label="Rest"
-          link="/topic/rest"
+          link="/java/rest"
           d="M0 14l6-6-6-6v12z"
           menuStyle="menuCard twoStyle"
         />
         <MenuCard
           label="Spring"
-          link="/topic/spring"
+          link="/java/spring"
+          d="M0 14l6-6-6-6v12z"
+          menuStyle="menuCard twoStyle"
+        />
+        <MenuCard
+          label="Python"
+          link="/"
+          d={twoMenuIcon}
+          menuStyle="menuCard oneStyle"
+        />
+        <MenuCard
+          label="Django"
+          link="/python/django"
+          d="M0 14l6-6-6-6v12z"
+          menuStyle="menuCard twoStyle"
+        />
+        <MenuCard
+          label="Diesel"
+          link="/python/diesel"
           d="M0 14l6-6-6-6v12z"
           menuStyle="menuCard twoStyle"
         />

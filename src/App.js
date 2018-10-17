@@ -27,7 +27,7 @@ class App extends Component {
                 <Route exact path="/" component={BodyContainer} />
                 <Route
                   exact
-                  path="/topic/:topic"
+                  path="/:language/:topic"
                   component={TopicBodyContainer}
                 />
               </Switch>
