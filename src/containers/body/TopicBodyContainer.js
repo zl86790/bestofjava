@@ -18,7 +18,10 @@ class TopicBodyContainer extends React.Component {
   async componentDidMount() {
     this.setState({ displayLoading: "" });
     this.setState({ displayContent: "none" });
-    const response = await getTopJavaTopic(this.props.match.params.topic);
+    const response = await getTopJavaTopic(
+      this.props.match.params.language,
+      this.props.match.params.topic
+    );
     this.setState({ data: response.data });
     this.setState({ displayLoading: "none" });
     this.setState({ displayContent: "" });
@@ -28,8 +31,8 @@ class TopicBodyContainer extends React.Component {
     this.setState({ displayLoading: "" });
     this.setState({ displayContent: "none" });
     const response = await getTopJavaTopic(
-      this.props.match.params.language,
-      this.props.match.params.topic
+      nextProps.match.params.language,
+      nextProps.match.params.topic
     );
     this.setState({ data: response.data });
     this.setState({ displayLoading: "none" });
