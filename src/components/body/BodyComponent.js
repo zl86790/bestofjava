@@ -7,7 +7,8 @@ const BodyComponent = props => {
     <DashboardComponent
       data={props.data}
       topic={props.topic}
-      display={props.display}
+      displayLoading={props.displayLoading}
+      displayContent={props.displayContent}
     />
   );
 };

@@ -30,13 +30,13 @@ const DashboardComponent = props => {
       <div style={{ clear: "both" }} />
       <div
         className="row col-md-12 offset-4"
-        style={{ display: props.display }}
+        style={{ display: props.displayLoading }}
       >
         <div style={{ marginLeft: 63 }}>
           <ReactLoading type="spin" color="orange" width={50} />
         </div>
       </div>
-      <div>
+      <div style={{ display: props.displayContent }}>
         {props.data.items &&
           props.data.items.map(item => {
             return (
