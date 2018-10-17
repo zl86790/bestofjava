@@ -4,10 +4,9 @@ const Banner = props => {
   return (
     <div>
       <div className="row no-gutter">
-        <div className="bannerStyle">The best of Java open-source projects</div>
-        <div className="subBannerStyle">
-          A curated list of the most popular open-source projects related to
-          Java.
+        <div className="bannerStyle col-md-12">The best of Github projects</div>
+        <div className="subBannerStyle col-md-12">
+          A curated list of the most popular projects in Github
         </div>
       </div>
       <div className="splitterStyle row no-gutter" />

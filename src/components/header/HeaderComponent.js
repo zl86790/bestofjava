@@ -4,7 +4,7 @@ import "./css/headerComponentStyle.css";
 const HeaderComponent = props => {
   return (
     <div>
-      <div className="headerTitle">bestofjava.net</div>
+      <div className="headerTitle">bestofgit.com</div>
     </div>
   );
 };
