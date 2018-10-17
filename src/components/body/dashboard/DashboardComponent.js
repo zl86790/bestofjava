@@ -5,7 +5,7 @@ import ReactLoading from "react-loading";
 const DashboardComponent = props => {
   return (
     <div className="row">
-      <div className="dashboardTitleStyle row">
+      <div className="dashboardTitleStyle row col-md-12">
         <div style={{ marginTop: -5, marginLeft: 15, marginRight: 15 }}>
           <svg
             width="22"
@@ -27,9 +27,12 @@ const DashboardComponent = props => {
           Projects
         </div>
       </div>
-      <br />
-      <div className="row" style={{ display: props.display }}>
-        <div style={{ paddingTop: 80, paddingLeft: 213 }}>
+      <div style={{ clear: "both" }} />
+      <div
+        className="row col-md-12 offset-4"
+        style={{ display: props.display }}
+      >
+        <div style={{ marginLeft: 63 }}>
           <ReactLoading type="spin" color="orange" width={50} />
         </div>
       </div>
