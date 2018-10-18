@@ -9,7 +9,7 @@ export const getTopJava = async () => {
 
 export const getTopJavaTopic = async (language, topic) => {
   //let url = "https://api.github.com/search/repositories?q=";
-  let url = "http://localhost:3001/?";
+  let url = "http://lizhe.name:3001/?";
   if (language) {
     url += "language=" + language;
   }
