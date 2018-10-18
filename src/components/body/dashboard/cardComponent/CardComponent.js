@@ -33,12 +33,15 @@ const CardComponent = props => {
         </div>
       </div>
       <div
-        className="row top-gray-line ell"
+        className="row top-gray-line ell cardComponentContent"
         style={{ padding: 15, height: 117, paddingBottom: 18 }}
       >
         {props.content}
       </div>
-      <div className="row top-gray-line" style={{ padding: 15 }}>
+      <div
+        className="row top-gray-line cardComponentFooter"
+        style={{ padding: 15 }}
+      >
         Owner:&nbsp;
         {props.owner}
       </div>

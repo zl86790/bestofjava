@@ -68,6 +68,32 @@ const MenuComponent = props => {
           d="M0 14l6-6-6-6v12z"
           menuStyle="menuCard twoStyle"
         />
+
+        <MenuCard
+          label="Javascript"
+          link="/javascript"
+          d={twoMenuIcon}
+          menuStyle="menuCard oneStyle"
+        />
+        <MenuCard
+          label="JQuery"
+          link="/javascript/jquery"
+          d="M0 14l6-6-6-6v12z"
+          menuStyle="menuCard twoStyle"
+        />
+        <MenuCard
+          label="React"
+          link="/javascript/react"
+          d="M0 14l6-6-6-6v12z"
+          menuStyle="menuCard twoStyle"
+        />
+        <MenuCard
+          label="Vue"
+          link="/javascript/vue"
+          d="M0 14l6-6-6-6v12z"
+          menuStyle="menuCard twoStyle"
+        />
+
         <MenuCard
           label="Python"
           link="/python"

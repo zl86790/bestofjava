@@ -1,7 +1,9 @@
 .bannerStyle {
   color: rgb(91, 16, 4);
-  font: 700 40px "Trebuchet MS";
+  font-weight: 700;
+  font-size: 40px;
   padding-top: 15px;
+  font-family: "Arial", "Microsoft YaHei";
 }
 
 .subBannerStyle {

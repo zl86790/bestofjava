@@ -10,6 +10,16 @@
 
 .cardComponentTitle {
   height: 75px;
+  color: rgb(91, 16, 4);
+  font-weight: 500;
+}
+
+.cardComponentContent {
+  /*color: rgb(91, 16, 4);*/
+}
+
+.cardComponentFooter {
+  /*color: rgb(91, 16, 4);*/
 }
 
 .ell {
