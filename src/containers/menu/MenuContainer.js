@@ -5,10 +5,6 @@ import LogoComponent from "../../components/logo/LogoComponent.js";
 import "./css/menuStyle.css";
 
 class MenuContainer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="leftMenu">

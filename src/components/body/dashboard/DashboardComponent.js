@@ -46,6 +46,7 @@ const DashboardComponent = props => {
                 stars={item.stargazers_count}
                 content={item.description}
                 owner={item.owner.login}
+                key={item.name}
               />
             );
           })}

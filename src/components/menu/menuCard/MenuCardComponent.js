@@ -10,7 +10,7 @@ const MenuCardComponent = props => {
           <svg
             width="20"
             height="20"
-            class="octicon octicon-home"
+            className="octicon octicon-home"
             viewBox="0 0 16 16"
             version="1.1"
             aria-hidden="true"
@@ -20,13 +20,7 @@ const MenuCardComponent = props => {
           </svg>
         </div>
         <div className="col-md-3" style={{ marginTop: 3 }}>
-          <Link
-            to={props.link}
-            activeClassName="activeMenu"
-            activeStyle={{ color: "green" }}
-          >
-            {props.label}
-          </Link>
+          <Link to={props.link}>{props.label}</Link>
         </div>
       </div>
     </div>

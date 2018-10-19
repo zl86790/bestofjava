@@ -6,7 +6,7 @@ const CardComponent = props => {
     <div className="cardComponentStyle col-md-5">
       <div className="row cardComponentTitle" fill="rgb(250, 158, 89)">
         <div className="col-md-2">
-          <img src={props.image} width={50} style={{ marginTop: 10 }} />
+          <img src={props.image} width={50} style={{ marginTop: 10 }} alt="" />
         </div>
         <div className="col-md-7 text-center" style={{ margin: "auto" }}>
           <div className="">{props.title}</div>
