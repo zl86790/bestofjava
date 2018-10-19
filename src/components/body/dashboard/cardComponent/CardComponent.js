@@ -9,7 +9,9 @@ const CardComponent = props => {
           <img src={props.image} width={50} style={{ marginTop: 10 }} alt="" />
         </div>
         <div className="col-md-7 text-center" style={{ margin: "auto" }}>
-          <div className="">{props.title}</div>
+          <div className="">
+            <a href={props.html_url}>{props.title}</a>
+          </div>
         </div>
         <div className="col-md-3 text-center" style={{ margin: "auto" }}>
           <div className="">

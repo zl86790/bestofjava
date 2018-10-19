@@ -10,8 +10,11 @@
 
 .cardComponentTitle {
   height: 75px;
-  color: rgb(91, 16, 4);
+
   font-weight: 500;
+}
+.cardComponentTitle a {
+  color: rgb(91, 16, 4);
 }
 
 .cardComponentContent {
